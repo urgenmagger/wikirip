@@ -1,11 +1,17 @@
 import React from 'react';
-import FilterResults from 'react-filter-search';
+import SearchField from 'react-search-field';
 //import Login from './Login/Login';
 //$.import_js('/path_to_project/scripts/somefunctions.js');
 const mainPage = () => {
   // debugger;
   //   let postElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} id={p.id}/>)
 
+  {
+    /*leave search from https://github.com/nutboltu/react-search-field*/
+  }
+  const onChange = () => {
+    console.log('test');
+  };
   return (
     <div className="mainPage">
       <div className="myposts">
@@ -31,6 +37,13 @@ const mainPage = () => {
               </form>
             </div>
           </div>
+          {/*leave search from https://github.com/nutboltu/react-search-field*/}
+          <SearchField
+            placeholder="Search..."
+            onChange={onChange}
+            searchText="This is initial search text"
+            classNames="test-class"
+          />
         </section>
       </div>
       <div className="page_content_wrap1">
@@ -91,124 +104,124 @@ const mainPage = () => {
                                       </a>
                                     </span>
                                   </div>
-                                <div className="post_descr clearfix">
-                                  <a
-                                    href="https://wikirip.site/kotyshev_mihail_aleksandrovich_1965_2003_andreevskoe_kladbishhe_komsomolsk_doneczkoj_obl"
-                                    title="Узнать местоположение">
-                                    Узнать местоположение
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="post_item post_item_obituaries column-1_3 post_featured_default post_format_standard even post-725 post type-post status-publish format-standard has-post-thumbnail hentry category-memorials category-obituaries">
-                              <div className="post_featured">
-                                <div className="post_thumb">
-                                  <a
-                                    className="hover_icon hover_icon_link"
-                                    href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
-                                    title="">
-                                    <img
-                                      className="wp-post-image"
-                                      width="250"
-                                      height="250"
-                                      alt="НАЗИМКОВ ДМИТРИЙ ИВАНОВИЧ, 1938, 2014, СЕЛО ВЕСЕЛОЕ, КОМСОМОЛЬСК, ДОН ОБЛ"
-                                      src="https://wikirip.site/image/cache/photos/%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_1938_2014_cropface.jpg"
-                                    />
-                                  </a>
-                                </div>
-                              </div>
-                              <div className="post_content clearfix">
-                                <div className="obituaries_title">
-                                  <h4 className="post_title">
+                                  <div className="post_descr clearfix">
                                     <a
-                                      href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
-                                      title="НАЗИМКОВ ДМИТРИЙ ИВАНОВИЧ, 1938, 2014, СЕЛО ВЕСЕЛОЕ, КОМСОМОЛЬСК, ДОН ОБЛ">
-                                      <span className="post_icon icon-book-2"></span>
-                                      НАЗИМКОВ ДМИТРИЙ ИВАНОВИЧ, 1938, 2014,
-                                      СЕЛО ВЕСЕЛОЕ, КОМСОМОЛЬСК, ДОН ОБЛ
+                                      href="https://wikirip.site/kotyshev_mihail_aleksandrovich_1965_2003_andreevskoe_kladbishhe_komsomolsk_doneczkoj_obl"
+                                      title="Узнать местоположение">
+                                      Узнать местоположение
                                     </a>
-                                  </h4>
-                                  <div className="post_info">
-                                    <span className="post_info_item post_info_posted">
-                                      {' '}
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="post_item post_item_obituaries column-1_3 post_featured_default post_format_standard even post-725 post type-post status-publish format-standard has-post-thumbnail hentry category-memorials category-obituaries">
+                                <div className="post_featured">
+                                  <div className="post_thumb">
+                                    <a
+                                      className="hover_icon hover_icon_link"
+                                      href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
+                                      title="">
+                                      <img
+                                        className="wp-post-image"
+                                        width="250"
+                                        height="250"
+                                        alt="НАЗИМКОВ ДМИТРИЙ ИВАНОВИЧ, 1938, 2014, СЕЛО ВЕСЕЛОЕ, КОМСОМОЛЬСК, ДОН ОБЛ"
+                                        src="https://wikirip.site/image/cache/photos/%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_1938_2014_cropface.jpg"
+                                      />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div className="post_content clearfix">
+                                  <div className="obituaries_title">
+                                    <h4 className="post_title">
                                       <a
                                         href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
-                                        className="post_info_date"
-                                        title="May 8, 2015">
-                                        Июль 8, 2015
+                                        title="НАЗИМКОВ ДМИТРИЙ ИВАНОВИЧ, 1938, 2014, СЕЛО ВЕСЕЛОЕ, КОМСОМОЛЬСК, ДОН ОБЛ">
+                                        <span className="post_icon icon-book-2"></span>
+                                        НАЗИМКОВ ДМИТРИЙ ИВАНОВИЧ, 1938, 2014,
+                                        СЕЛО ВЕСЕЛОЕ, КОМСОМОЛЬСК, ДОН ОБЛ
                                       </a>
-                                    </span>
+                                    </h4>
+                                    <div className="post_info">
+                                      <span className="post_info_item post_info_posted">
+                                        {' '}
+                                        <a
+                                          href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
+                                          className="post_info_date"
+                                          title="May 8, 2015">
+                                          Июль 8, 2015
+                                        </a>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div className="post_descr clearfix">
+                                    <a
+                                      href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
+                                      title="Узнать местоположение">
+                                      Узнать местоположение
+                                    </a>{' '}
                                   </div>
                                 </div>
-                                <div className="post_descr clearfix">
-                                  <a
-                                    href="https://wikirip.site/nazimkov_dmitrij_ivanovich_1938_2014_selo_veseloe_komsomolsk_don_obl_ukr"
-                                    title="Узнать местоположение">
-                                    Узнать местоположение
-                                  </a>{' '}
-                                </div>
                               </div>
-                            </div>
-                            <div className="post_item post_item_obituaries column-1_3 post_featured_default post_format_standard odd last post-722 post type-post status-publish format-standard has-post-thumbnail hentry category-memorials category-obituaries">
-                              <div className="post_featured">
-                                <div className="post_thumb">
-                                  <a
-                                    className="hover_icon hover_icon_link"
-                                    href="https://wikirip.site/agureev_sergej_fedorovich_1973_2004_komsomolske_kladbishhe_doneczkoj_oblasti_ukraina"
-                                    title="">
-                                    <img
-                                      className="wp-post-image"
-                                      width="250"
-                                      height="250"
-                                      alt="АГУРЕЕВ СЕРГЕЙ ФЕДОРОВИЧ, 1973, 2004, КОМСОМОЛЬСКЕ КЛАДБИЩЕ, ДОНЕЦКОЙ ОБЛАСТИ"
-                                      src="https://wikirip.site/image/cache/photos/Агуреев Сергей Федорович, 1973,2004.jpg"
-                                    />
-                                  </a>
-                                </div>
-                              </div>
-
-                              <div className="post_content clearfix">
-                                <div className="obituaries_title">
-                                  <h4 className="post_title">
+                              <div className="post_item post_item_obituaries column-1_3 post_featured_default post_format_standard odd last post-722 post type-post status-publish format-standard has-post-thumbnail hentry category-memorials category-obituaries">
+                                <div className="post_featured">
+                                  <div className="post_thumb">
                                     <a
+                                      className="hover_icon hover_icon_link"
                                       href="https://wikirip.site/agureev_sergej_fedorovich_1973_2004_komsomolske_kladbishhe_doneczkoj_oblasti_ukraina"
-                                      title="АГУРЕЕВ СЕРГЕЙ ФЕДОРОВИЧ, 1973, 2004, КОМСОМОЛЬСКЕ КЛАДБИЩЕ, ДОНЕЦКОЙ ОБЛАСТИ">
-                                      <span className="post_icon icon-book-2"></span>
-                                      АГУРЕЕВ СЕРГЕЙ ФЕДОРОВИЧ, 1973, 2004,
-                                      КОМСОМОЛЬСКЕ КЛАДБИЩЕ, ДОНЕЦКОЙ ОБЛАСТИ
+                                      title="">
+                                      <img
+                                        className="wp-post-image"
+                                        width="250"
+                                        height="250"
+                                        alt="АГУРЕЕВ СЕРГЕЙ ФЕДОРОВИЧ, 1973, 2004, КОМСОМОЛЬСКЕ КЛАДБИЩЕ, ДОНЕЦКОЙ ОБЛАСТИ"
+                                        src="https://wikirip.site/image/cache/photos/Агуреев Сергей Федорович, 1973,2004.jpg"
+                                      />
                                     </a>
-                                  </h4>
-                                  <div className="post_info">
-                                    <span className="post_info_item post_info_posted">
-                                      {' '}
+                                  </div>
+                                </div>
+
+                                <div className="post_content clearfix">
+                                  <div className="obituaries_title">
+                                    <h4 className="post_title">
                                       <a
                                         href="https://wikirip.site/agureev_sergej_fedorovich_1973_2004_komsomolske_kladbishhe_doneczkoj_oblasti_ukraina"
-                                        className="post_info_date"
-                                        title="May 8, 2015">
-                                        Июль 8, 2019
+                                        title="АГУРЕЕВ СЕРГЕЙ ФЕДОРОВИЧ, 1973, 2004, КОМСОМОЛЬСКЕ КЛАДБИЩЕ, ДОНЕЦКОЙ ОБЛАСТИ">
+                                        <span className="post_icon icon-book-2"></span>
+                                        АГУРЕЕВ СЕРГЕЙ ФЕДОРОВИЧ, 1973, 2004,
+                                        КОМСОМОЛЬСКЕ КЛАДБИЩЕ, ДОНЕЦКОЙ ОБЛАСТИ
                                       </a>
-                                    </span>
+                                    </h4>
+                                    <div className="post_info">
+                                      <span className="post_info_item post_info_posted">
+                                        {' '}
+                                        <a
+                                          href="https://wikirip.site/agureev_sergej_fedorovich_1973_2004_komsomolske_kladbishhe_doneczkoj_oblasti_ukraina"
+                                          className="post_info_date"
+                                          title="May 8, 2015">
+                                          Июль 8, 2019
+                                        </a>
+                                      </span>
+                                    </div>
                                   </div>
-                                </div>
-                                <div className="post_descr clearfix">
-                                  <a
-                                    href="https://wikirip.site/agureev_sergej_fedorovich_1973_2004_komsomolske_kladbishhe_doneczkoj_oblasti_ukraina"
-                                    title="Узнать местоположение">
-                                    Узнать местоположение
-                                  </a>
+                                  <div className="post_descr clearfix">
+                                    <a
+                                      href="https://wikirip.site/agureev_sergej_fedorovich_1973_2004_komsomolske_kladbishhe_doneczkoj_oblasti_ukraina"
+                                      title="Узнать местоположение">
+                                      Узнать местоположение
+                                    </a>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div className="wpb_text_column wpb_content_element  vc_custom_1544873590936">
-                            <div className="wpb_wrapper"></div>
+                            <div className="wpb_text_column wpb_content_element  vc_custom_1544873590936">
+                              <div className="wpb_wrapper"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
             </section>
           </article>
