@@ -91,7 +91,6 @@ const mainPage = () => {
                                       </a>
                                     </span>
                                   </div>
-                                </div>
                                 <div className="post_descr clearfix">
                                   <a
                                     href="https://wikirip.site/kotyshev_mihail_aleksandrovich_1965_2003_andreevskoe_kladbishhe_komsomolsk_doneczkoj_obl"
@@ -209,6 +208,7 @@ const mainPage = () => {
                     </div>
                   </div>
                 </div>
+              </div>
               </div>
             </section>
           </article>
